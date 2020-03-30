@@ -6,7 +6,3 @@ a=`echo ${GIT_BRANCH} | sed -e "s|origin/||g"`
 echo $a
 echo "build user is"
 echo ${BUILD_USER}
-~                                                                                                                                                                                                           
-~                                                                                                                                                                                                           
-~                                                                                                                                                                                                           
-~                              
