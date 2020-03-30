@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ test ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,8 +32,12 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         echo ::set-env name=PULL_NUMBER::$(echo "$GITHUB_REF" | awk -F / '{print $3}')
-    - name: SendGrid
-      uses: peter-evans/sendgrid-action@v1
-      env:
-        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-        SCRIPT_FILEPATH: .github/workflows/email-sending-script.js
+
+    - name: Test
+    uses: actions/github-script@0.3.0
+    with:
+      github-token: ${{github.token}}
+      script: |
+        const core = require('@actions/core')
+        const prNumber = context.payload.number;
+        core.exportVariable('PULL_NUMBER', prNumber);
