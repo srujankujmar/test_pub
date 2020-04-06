@@ -18,4 +18,4 @@ jobs:
           # Create a personal access token and store it under the Secrets section of the particular repository
           # with the key "GITHUB_ACTIONS_TOKEN"
           #repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          github-token: "c4b21111f2883af046274387736d83cfea6c83eb"
+          github-token: c4b21111f2883af046274387736d83cfea6c83eb
