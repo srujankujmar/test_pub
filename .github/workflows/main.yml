@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: hmarr/auto-approve-action@v2.0.0
       with:
-        github-token: "${{ secrets.MY_GITHUB_TOKEN }}"
+        github-token: "689d0817b78807193959813670f10cef80113c18"
