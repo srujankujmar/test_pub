@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Hello aMr.Srujankumar testing updated PR"
+echo "Hello Mr.Srujankumar testing updated PR"
 echo "Testaing the execution of POLLING SCM"
 a=`echo ${GIT_BRANCH} | sed -e "s|origin/||g"`
 
