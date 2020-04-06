@@ -37,6 +37,6 @@ jobs:
 
     - uses: andrewmusgrave/automatic-pull-request-review@0.0.2
       with:
-        github-token: '${{ secrets.GITHUB_TOKEN }}'
+        repo-token: '${{ secrets.GITHUB_TOKEN }}'
         event: APPROVE
         body: 'Thank you dependabot 🎊'
