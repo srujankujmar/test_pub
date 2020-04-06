@@ -17,4 +17,5 @@ jobs:
         #env:
           # Create a personal access token and store it under the Secrets section of the particular repository
           # with the key "GITHUB_ACTIONS_TOKEN"
-          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          #github-token: ${{ secrets.MY_GITHUB_TOKEN }}
